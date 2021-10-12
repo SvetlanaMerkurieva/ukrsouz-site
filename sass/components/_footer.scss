@@ -1,0 +1,214 @@
+/* Подвал */
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer__container {
+    display: block;
+    margin-left: auto;
+}
+.footer__div {
+    display: flex;
+    flex-direction: column;
+
+    &--position{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+.footer__link {
+    text-decoration: none;
+    color: $colorBlue;
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.19;
+    display: inline-block;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+.footer__address {
+    display: inline-block;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.footer__text {
+    color: $colorWhite;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    margin-bottom: 9px;
+}
+.footer__item {
+    text-decoration: none;
+    color: #FFFFFF99;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    display: inline-block;
+    margin-bottom: 9px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--position{
+        margin-bottom: 0px;
+    }
+    &:hover,
+    &:focus { 
+        color: $colorBlue;
+    }
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+.footer__appeal {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $colorWhite;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.footer__list--display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $colorBlue;
+    }
+    &--margin {
+        margin-left: 10px;
+    }
+}
+.footer__img {
+    width: 20px;
+    height: 20px;
+    fill: $colorWhite;
+}
+
+.footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer__input {
+    color: $colorWhite;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-bottom: 15px;
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+.footer__button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 28px;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $colorWhite;
+    background: $colorBlue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 200px;
+}
+@media screen and (min-width: 768px) {
+    .footer__block {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    .footer__div {
+        &--position {
+            margin-top: 0;
+            margin-left: 165px;
+        }
+    }
+    .footer__input {
+        width: 450px;
+    }
+    .footer__form {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer__container {
+        display: flex;
+        align-items: flex-start;
+    }
+    .footer__div {
+        margin-right: 70px;
+
+        &--position {
+            margin-top: 0;
+            margin-bottom: 0px;
+            margin-right: 93px;
+            margin-left: 0;
+        }
+    }
+    .footer__block {
+        margin-bottom: 0px;
+    }
+    .footer__link {
+        margin: 0 0 20px 0;
+    }
+    .footer__list {
+        text-align: left;
+    }
+    .footer__appeal {
+        text-align: left;
+        margin-top: 12px;
+    }
+    .footer__form {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .footer__input {
+        width: 358px;
+    }
+    .footer__button {
+        margin-left: 12px;
+        margin-top: 0px;
+    }
+}
