@@ -1,0 +1,177 @@
+.section-solvents {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.section-solvents__list-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-right: 0;
+    margin-left: -8px;
+    margin-top: -15px;
+    padding: 0;
+    list-style: none;
+}
+.section-solvents__button {
+    cursor: pointer;
+    color: $colorTitle;
+    background-color: $colorBackground;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    border: 0px;
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 73px;
+    margin-top: 15px;
+    margin-left: 8px;
+    flex-basis: calc((100% - 8px) / 3);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+    background-color: $colorBlue;
+    color: $colorWhite;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+.section-solvents__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.section-solvents__item {
+    width: 450px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    &:hover {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+.section-solvents__picture {
+    width: 100%;
+}
+.section-solvents__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(33, 150, 243, 0.9);
+    font-size: 18px;
+    line-height: 1.56;
+    color: $colorWhite;
+    width: 100%;
+    height: 100%;
+    padding: 15px 15px;
+    margin: 0;
+    overflow: auto;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .section-solvents__item:hover & {
+        transform: translateY(0%);
+        opacity: 1;
+    }  
+}
+.section-solvents__div {
+    border: 1px solid  $colorBorder;
+    border-top: 0;
+    padding: 20px 24px 20px 24px;
+
+    &--position {
+        position: relative;
+        overflow: hidden;
+    }
+}
+.section-solvents__title {
+    color: $colorTitle;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.section-solvents__text {
+    font-size: 16px;
+    line-height: 1.87;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+    .section-solvents__list-buttons {
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .section-solvents__button {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .section-solvents__list {
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-top: -30px; 
+        justify-content: flex-start;
+    }
+    .section-solvents__item {
+        flex-basis: calc((100% - 60px) / 2);
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        width: 354px;
+        height: 440px;
+        border: 1px solid  $colorBorder;
+        border-top: 0;
+    
+        &--indent:not(:last-child) {
+            margin-right: 8px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+    .section-solvents__div {
+        border: 0px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .section-solvents {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    .section-solvents__list-buttons {
+        margin-bottom: 50px;
+    }
+    .section-solvents__button {
+        margin-bottom: 0;
+    }
+    .section-solvents__list {
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-top: -30px; 
+    }
+    .section-solvents__item {
+        flex-basis: calc(100% / 3 - 30px);
+        width: 370px;
+        height: 404px;
+        border: 0px;
+    }
+    .section-solvents__div {
+        border: 1px solid  $colorBorder;
+        border-top: 0px;
+    }
+}

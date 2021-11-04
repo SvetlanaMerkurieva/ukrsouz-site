@@ -22,13 +22,49 @@
                     <li class="header__item"><a class="header__link" href="./solvents.html">Растворители</a></li>
                     <li class="header__item"><a class="header__link" href="./sleeves.html">Гильзы картонные</a></li>
                     <li class="header__item"><a class="header__link" href="./bottles.html">Тара ПЭТ</a></li>
-                    <li class="header__item"><a class="header__link" href="">Контакты</a></li>
+                    <li class="header__item"><a class="header__link" href="#footer">Контакты</a></li>
                 </ul>
             </nav>
             <div class="header__item">
                 <span class="day"></span>
                 <span class="month"></span>
                 <span class="year"></span>
+            </div>
+            <button class="mobile-menu__button" type="button" data-menu-button>
+                <svg class="mobile-menu__icon" width="24px" height="16px">
+                    <use href="./images/icons.svg#mobile-menu-icon"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu" data-menu>
+                <button class="mobile-menu__button-close" type="button" data-menu-close>
+                    <svg class="mobile-menu__icon-close">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div class="container mobile-menu__container">
+                    <nav class="mobile-menu__nav">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item mobile-menu__item--current"><a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Главная</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="./solvents.html">Растворители</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="./sleeves.html">Гильзы картонные</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__link" href="./bottles.html">Тара ПЭТ</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-menu__contacts">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item">
+                                <a class="mobile-menu__link mobile-menu__link--size" href="tel:+380504878178">
+                                    +38 050 487-81-78
+                                </a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a class="mobile-menu__link mobile-menu__link--size mobil-menu__link--individual-size" href="mailto:ukrsouz.sbyt@ukr.net">
+                                    ukrsouz.sbyt@ukr.net
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -105,10 +141,12 @@
                         </div> 
                     </li>
                     <li class="section-job__item">
-                        <picture class="section-job__pic">
-                            <source srcset="./images/jobs/blowing.webp">
-                            <img class="section-job__picture" src="#" alt="Оборудование для выдува ПЭТ тары" width="370" height="294">
-                        </picture>
+                        <div class="section-job__pic">
+                            <picture>
+                                <source srcset="./images/jobs/blowing.webp">
+                                <img class="section-job__picture" src="#" alt="Оборудование для выдува ПЭТ тары" width="370" height="294" margin="0">
+                            </picture>
+                        </div>  
                         <div class="section-job__description">
                             <p class="section-job__text">Выдув ПЭТ тары</p>
                         </div> 
@@ -118,68 +156,22 @@
         </section>
     </main>
     <!--Подвал сайта-->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container footer__container">
-            <div class="footer__block">
-                <div class="footer__div">
-                    <a href="./index.html" class="footer__link">
-                        Укр<span class="footer__logo--accent">Союз</span>
-                    </a>
-                    <address class="footer__address">
-                        <ul class="footer__list">
-                            <li class="footer__text"></li>
-                            <li><a class="footer__item" href="mailto:ukrsouz.sbyt@ukr.net">ukrsouz.sbyt@ukr.net</a></li>
-                            <li><a class="footer__item footer__item--position" href="tel:+380504878178">+38 050 487 81 78</a></li>
-                        </ul>
-                    </address>
-                </div>
-                <div class="footer__div--position">
-                    <p class="footer__appeal">ПРИСОЕДИНЯЙТЕСЬ</p>
-                    <ul class="footer__list footer__list--display">
-                        <li class="footer__item">
-                            <a class="footer__icon" href="">
-                                <svg class="footer__img">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__icon" href="">
-                                <svg class="footer__img">
-                                    <use href="./images/icons.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__icon" href="">
-                                <svg class="footer__img">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__icon" href="">
-                                <svg class="footer__img">
-                                    <use href="./images/icons.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
+            <div class="footer__div">
+                <a href="./index.html" class="footer__link">
+                    Укр<span class="footer__logo--accent">Союз</span>
+                </a>
+                <address class="footer__address">
+                    <ul class="footer__list">
+                        <li class="footer__text">г. Днепр</li>
+                        <li><a class="footer__item" href="mailto:ukrsouz.sbyt@ukr.net">ukrsouz.sbyt@ukr.net</a></li>
+                        <li><a class="footer__item footer__item--position" href="tel:+380504878178">+38 050 487 81 78</a></li>
                     </ul>
-                </div>
-            </div>
-                <div>
-                <p class="footer__appeal">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-                <form class="footer__form">
-                    <input class="footer__input" type="email" name="email" placeholder="E-mail"/>
-                    <button type="submit" class="footer__button">Подписаться
-                        <svg class="footer__icon--margin" width="24px" height="24px">
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </form> 
+                </address>
             </div>
         </div>
     </footer>
-   <script src="./js/main.js" type="module"></script> 
+   <script src="./index.js" type="module"></script> 
 </body>
 </html>

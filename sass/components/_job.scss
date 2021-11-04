@@ -1,21 +1,59 @@
 /* Секция Чем мы занимаемся */
+
 .section-job {
-    display: none;
+    display: block;
+    padding-top: 47px;
+    padding-bottom: 94px;
+}   
+.section-job__title {
+    color: $colorTitle;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
-@media screen and (min-width: 1200px) {
-    .section-job {
-        display: block;
-        padding-top: 47px;
-        padding-bottom: 94px;
-    }   
-    .section-job__title {
-        color: $colorTitle;
-        font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
-        margin-top: 0px;
-        margin-bottom: 50px;
+.section-job__list {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.section-job__item {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
     }
+}
+.section-job__pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.section-job__description {
+    width: 370px;
+    background: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    margin-left: -185px;
+}
+.section-job__text {
+    color: $colorWhite;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 1200px) {
     .section-job__list {
         display: flex;
         padding: 0;
@@ -24,30 +62,10 @@
     }
     .section-job__item {
         position: relative;
-
+    
         &:not(:last-child) {
             margin-right: 30px;
+            margin-bottom: 0px;
         }
-    }
-    .section-job__picture {
-        display: block;
-    }
-    .section-job__description {
-        width: 370px;
-        background: rgba(47, 48, 58, 0.8);
-        position: absolute;
-        bottom: 0; 
-    }
-    .section-job__text {
-        color: $colorWhite;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        text-transform: uppercase;
-        text-align: center;
-        padding-top: 27px;
-        padding-bottom: 27px;
-        margin-top: 0;
-        margin-bottom: 0;
     }
 }
