@@ -19,6 +19,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.hero__picture {
+    height: 400px;
+    width: 768px;
+}
 .hero__title {
     color: #FFFFFF;
     font-weight: 900;
@@ -49,6 +53,10 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
     ), url(../../images/hero-fon.jpg);
+    }
+    .hero__picture {
+        height: 600px;
+        width: 1600px;
     }
     .hero__title {
         font-size: 44px;
